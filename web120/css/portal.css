@@ -1,0 +1,206 @@
+/* My WEB120 Portal Website Styles */
+
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400');
+
+
+html {
+    background-color:#fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+    padding: .5em;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#E98069  ;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.logo {
+    color:#E98069;
+    margin-left:1%;
+    font-size:.9em;
+    font-weight:300;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear:both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1025px) {
+	
+   div.wrapper {
+		width:80%;
+       min-width: 1025px;
+		margin:auto;
+	}
+
+    section {
+		width:65%;
+		float:left;
+	}
+    
+     aside {	
+		width:30%;
+        height: auto;
+		float:right;
+        background: #F9DFD9;
+        margin: .5em 0em;
+        padding: .7em .7em;
+	}
+    
+    section.aia {
+		width:70%;
+		float:right;
+        margin: .5em 0em;
+        padding: .5em .7em;
+	}
+    
+      aside.aia {	
+		width:30%;
+        height: auto;
+		float:left;
+        background: #F9DFD9;
+        margin: .5em 0em;
+        padding: .5em .7em;
+	}   
+			
+    img.insta{
+        width: 100%;
+        height: auto;
+    }
+    
+    img.desktop {
+      		float:left;
+       		width:50%;
+            margin: .5em;
+   	 }
+    
+    img.tablet, img.phone {
+       		 display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #fff;
+        		color:#E98069  ;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1024px) {
+	
+	section {
+		width:55%;
+		float:left;
+	}
+	
+	aside {	
+		width:40%;
+		float:right;
+        height: auto;
+        background: #F9DFD9;
+        margin: .5em 0em;
+        padding: 0em .7em;
+	}
+
+	section.aia {
+		width:60%;
+		float:right;
+        margin: .5em 0em;
+        padding: .5em .7em;
+	}
+	
+	aside.aia {	
+		width:40%;
+		float:left;
+        height: auto;
+        background: #F9DFD9;
+        margin: .5em 0em;
+        padding: .7em .7em;
+	}
+	
+    img.insta{
+        width: 100%;
+        height: auto;
+    }
+            img.tablet {
+       		width:100%;
+            max-width: 350px;
+           }
+    
+           img.phone, img.desktop {
+        		display:none;
+           } 
+    
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #fff;
+        		color:#E98069  ;
+          }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    
+    aside.aia {	
+        background: #F9DFD9;
+        margin-bottom: .5em;
+	}
+    
+    img.insta{
+        width: 100%;
+        height: auto;
+    }
+    img.phone {
+       		width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        		display:none;
+    }  
+
+}
+
