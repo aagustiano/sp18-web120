@@ -18,7 +18,7 @@
 <!-- START WRAPPER -->
 <div class="wrapper">
 <header>
-  <h1><a href="index.php"><i class="logo fa fa-file-code-o"></i> Alexa's WEB120 Portal</a></h1>
+  <h1><a href="index.php"><i class="logo fa <?=$logo?>"></i> Alexa's WEB120 Portal</a></h1>
   <nav>
     <ul class="topnav" id="myTopnav">
       <li>&nbsp;<a href="index.php" class="<?= ($selectedPage == 'index') ? 'selected':''; ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
