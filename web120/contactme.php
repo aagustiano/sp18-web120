@@ -12,8 +12,7 @@
 
 <!-- START RIGHT COL -->
 <aside>
- <h3>Find me on social media!</h3>
-<a href="https://www.instagram.com/alvibaedra/" target="_blank"><img src="images/alvibaedra_nametag.png" class="insta"  alt="instagram handle: alvibaedra"></a>
+
 </aside>
 <!-- END RIGHT COL -->
 
